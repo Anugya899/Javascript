@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <H1>Swapping two variables : </H1>
+    <p id="demo"></p>
+    <script>
+       let a = prompt ("Enter any number");
+        let b = prompt ("Enter another number");
+        let temp;
+        temp = a;
+        a = b;
+        b = temp;
+        let result = (`The swapped numbers are : ${a}, ${b}`);
+        document.getElementById("demo").innerHTML = result;
+    </script>
+</body>
+</html>
