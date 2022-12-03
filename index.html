@@ -7,16 +7,17 @@
     <title>JS</title>
 </head>
 <body>
-    <H1>Swapping two variables : </H1>
+    <H1>Adding two variables : </H1>
     <p id="demo"></p>
     <script>
-       let a = prompt ("Enter any number");
-        let b = prompt ("Enter another number");
-        let temp;
-        temp = a;
-        a = b;
-        b = temp;
-        let result = (`The swapped numbers are : ${a}, ${b}`);
+       var a = parseInt(prompt("Enter any number"));
+        var b = parseInt(prompt("Enter another number"));
+        var sum;
+        sum = (a+b);
+        if (a==b){
+            sum = 3 * (a+b);
+           }
+        let result = (`The sum of the numbers are : ${sum}`);
         document.getElementById("demo").innerHTML = result;
     </script>
 </body>
